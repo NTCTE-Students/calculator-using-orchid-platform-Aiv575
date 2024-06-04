@@ -19,6 +19,8 @@ use App\Orchid\Screens\User\UserListScreen;
 use App\Orchid\Screens\User\UserProfileScreen;
 use Illuminate\Support\Facades\Route;
 use Tabuna\Breadcrumbs\Trail;
+use App\Orchid\Screens\MathScreen;
+use App\Orchid\Screens\PhysicalScreen;
 
 /*
 |--------------------------------------------------------------------------
@@ -101,4 +103,7 @@ Route::screen('/examples/grid', ExampleGridScreen::class)->name('platform.exampl
 Route::screen('/examples/charts', ExampleChartsScreen::class)->name('platform.example.charts');
 Route::screen('/examples/cards', ExampleCardsScreen::class)->name('platform.example.cards');
 
+
+Route::screen('math', MathScreen::class)->name('platform.math');
+Route::screen('physical', PhysicalScreen::class)->name('platform.physical');
 //Route::screen('idea', Idea::class, 'platform.screens.idea');
